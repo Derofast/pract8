@@ -55,6 +55,8 @@ namespace pract8
                 iD++;
             }
             while (iW <= en);
+
+            //я люблю тебя лиза
         }
     }
 }

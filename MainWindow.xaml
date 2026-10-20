@@ -1,0 +1,37 @@
+﻿<Window x:Class="pract8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pract8"
+        mc:Ignorable="d"
+        Title="pract8" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Click="zad1_Click" x:Name="zad1" Content="Задача 1" Grid.Row="1" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad2_Click" x:Name="zad2" Content="Задача 2" Grid.Row="1" Grid.Column="1" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad3_Click" x:Name="zad3" Content="Задача 3" Grid.Row="1" Grid.Column="2" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad4_Click" x:Name="zad4" Content="Задача 4" Grid.Row="2" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad5_Click" x:Name="zad5" Content="Задача 5" Grid.Row="2" Grid.Column="1" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad6_Click" x:Name="zad6" Content="Задача 6" Grid.Row="2" Grid.Column="2" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad7_Click" x:Name="zad7" Content="Задача 7" Grid.Row="3" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad8_Click" x:Name="zad8" Content="Задача 8" Grid.Row="3" Grid.Column="1" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad9_Click" x:Name="zad9" Content="Задача 9" Grid.Row="3" Grid.Column="2" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad10_Click" x:Name="zad10" Content="Задача 10" Grid.Row="4" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad11_Click" x:Name="zad11" Content="Задача 11" Grid.Row="4" Grid.Column="1" Margin="30, 15" FontSize="20"/>
+        <Button Click="zad12_Click" x:Name="zad12" Content="Задача 12" Grid.Row="4" Grid.Column="2" Margin="30, 15" FontSize="20"/>
+    </Grid>
+</Window>

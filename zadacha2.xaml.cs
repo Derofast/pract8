@@ -50,7 +50,7 @@ namespace pract8
             int sumD = 0;
             int iD = st;
 
-            //popa
+            //popaap
         }
     }
 }

@@ -49,7 +49,12 @@ namespace pract8
 
             int sumD = 0;
             int iD = st;
-
+            do
+            {
+                sumD += iD;
+                iD++;
+            }
+            while (iW <= en);
         }
     }
 }

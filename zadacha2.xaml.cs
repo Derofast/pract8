@@ -27,36 +27,36 @@ namespace pract8
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int n = Convert.ToInt32(chN.Text);
-            int sumF = 0;
+            int sum = 0;
             int st = (int)Math.Pow(10, n - 1);
             int en = (int)Math.Pow(10, n) - 1;
 
             for (int i = st; i <= en; i++)
             {
-                sumF += i;
+                sum += i;
             }
-            lab.Content += $"FOR: {sumF}\n";
+            lab.Content += $"FOR: {sum}\n";
 
-            int sumW = 0;
-            int iW = st;
+            sum = 0;
+            int iw = st;
 
-            while (iW <= en)
+            while (iw <= en)
             {
-                sumW += iW;
-                iW++;
+                sum += iw;
+                iw++;
             }
-            lab.Content += $"WHILE: {sumW}";
+            lab.Content += $"WHILE: {sum}\n";
 
-            int sumD = 0;
-            int iD = st;
+            sum = 0;
+            iw = st;
             do
             {
-                sumD += iD;
-                iD++;
+                sum += iw;
+                iw++;
             }
-            while (iW <= en);
+            while (iw <= en);
+            lab.Content += $"WHILE: {sum}";
 
-            //я люблю тебя лиза
         }
     }
 }

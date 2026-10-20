@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="zadacha12" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Введите число n" FontSize="30"/>
+        <TextBox x:Name="chN" Grid.Row="0" Grid.Column="1"/>
+        <Button Click="Button_Click"  Grid.Row="2" Content="Вычислить" FontSize="30"/>
+        <Label x:Name="lab" Grid.Row="1" Grid.Column="1"/>
     </Grid>
 </Window>

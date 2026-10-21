@@ -65,7 +65,7 @@ namespace pract8
                     double a = Math.Pow(m, 2) - Math.Pow(nw, 2);
                     int b = 2 * m * nw;
                     double c = Math.Pow(m, 2) + Math.Pow(nw, 2);
-                    lab.Items.Add($" {m} \t {nw} \t {a} \t {b} \t {c} \n");
+                    lab.Items.Add($" {m} \t {nw} \t {a} \t {b} \t {c} ");
                     nw++;
                 }
                 while (nw < k);

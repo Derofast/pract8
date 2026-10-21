@@ -26,45 +26,40 @@ namespace pract8
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (cb.SelectedIndex == 0)
-            {
-                lab.Content = "FOR:\n";
-                lab.Content += " x \t t \t y \n";
+
+                lab.Items.Add("FOR:");
+                lab.Items.Add(" x \t t \t y ");
                 for (int x = 4; x <= 28; x++)
                 {
                     int t = x + 2;
                     double y = 2 * Math.Pow(t, 2) + 5.5 * t - 2;
-                    lab.Content += $" {x} \t {t} \t {y} \n";
+                    lab.Items.Add($" {x} \t {t} \t {y} ");
                 }
-            }
-            if (cb.SelectedIndex == 1)
-            {
-                lab.Content = "WHILE:\n";
-                lab.Content += " x \t t \t y \n";
-                int x = 4;
-                while (x <= 28)
+
+                lab.Items.Add("WHILE:");
+                lab.Items.Add(" x \t t \t y ");
+                int xw = 4;
+                while (xw <= 28)
                 {
-                    int t = x + 2;
+                    int t = xw + 2;
                     double y = 2 * Math.Pow(t, 2) + 5.5 * t - 2;
-                    lab.Content += $" {x} \t {t} \t {y} \n";
-                    x++;
+                    lab.Items.Add($" {xw} \t {t} \t {y} ");
+                    xw++;
                 }
-            }
-            if (cb.SelectedIndex == 2)
-            {
-                lab.Content = "DO WHILE:\n";
-                lab.Content += " m \t n \t a \t b \t c \n";
-                int x = 4;
+
+                lab.Items.Add("DO WHILE:");
+                lab.Items.Add(" m \t n \t a \t b \t c ");
+                xw = 4;
                 do
                 {
-                    int t = x + 2;
+                    int t = xw + 2;
                     double y = 2 * Math.Pow(t, 2) + 5.5 * t - 2;
-                    lab.Content += $" {x} \t {t} \t {y} \n";
-                    x++;
+                    lab.Items.Add($" {xw} \t {t} \t {y} ");
+                    xw++;
                 }
-                while (x <= 28);
+                while (xw <= 28);
 
-            }
+            
         }
     }
 }

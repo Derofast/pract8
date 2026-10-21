@@ -26,7 +26,41 @@ namespace pract8
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            int k = Convert.ToInt32(chK.Text);
+
+            if (cb.SelectedIndex == 0)
+            {
+                lab.Content = "FOR:\n";
+                for (double w = 50.0; w <= 1000; w += 50)
+                {
+                    double cost = (w / 1000.0) * k;
+                    lab.Content += $"Вес {w} | Цена {cost}\n";
+                }
+            }
+            if (cb.SelectedIndex == 1)
+            {
+                lab.Content = "WHILE:\n";
+                double w = 50.0;
+                while (w <= 1000.0)
+                {
+                    double cost = (w / 1000.0) * k;
+                    lab.Content += $"Вес {w} | Цена {cost}\n";
+                    w += 50;
+                }
+            }
+            if (cb.SelectedIndex == 2)
+            {
+                lab.Content = "DO WHILE:\n";
+                double w = 50.0;
+                do
+                {
+                    double cost = (w / 1000.0) * k;
+                    lab.Content += $"Вес {w} | Цена {cost}\n";
+                    w += 50;
+                }
+                while (w <= 1000);
+
+            }
         }
     }
 }

@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pract8"
         mc:Ignorable="d"
-        Title="zadacha3" Height="450" Width="800">
+        Title="zadacha3" Height="700" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ComboBox Name="cb" Margin="138,90,151,101" RenderTransformOrigin="0.5,2.353">
+            <ComboBoxItem Content="Цикл For" IsSelected="True"/>
+            <ComboBoxItem Content="Цикл While"/>
+            <ComboBoxItem Content="Цикл Do While"/>
+        </ComboBox>
+        <Button Click="Button_Click" Grid.Row="2" Content="Вычислить" FontSize="30"/>
+        <Label x:Name="lab" Grid.Column="1" Grid.Row="1"/>
+        <Image Margin="22,72,10,80" Source="Image13.png" Stretch="Fill" Grid.Column="1"/>
     </Grid>
 </Window>

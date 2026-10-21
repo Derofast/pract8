@@ -39,7 +39,30 @@ namespace pract8
                     d += Math.Pow(x, i) / i;
 
                 }
-                lab.Content = $"FOR: Сумма = {d}";
+                lab.Content = $"FOR: Сумма = {d}\n";
+
+                int iw = 0;
+                d = 0;
+
+                while (iw < n)
+                {
+                    d += Math.Pow(x, (iw+1)) / (iw+1);
+                    iw++;
+                }
+                lab.Content += $"WHILE: Сумма = {d}\n";
+
+                iw = 1;
+                d = 0;
+
+                do
+                {
+                    d += Math.Pow(x, iw) / iw;
+                    iw++;
+
+                }
+                while (iw <= n);
+
+                lab.Content += $"DO WHILE: Сумма = {d}";
 
             }
         }

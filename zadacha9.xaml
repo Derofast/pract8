@@ -17,7 +17,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Введите число n" FontSize="30"/>
         <TextBox x:Name="chN" Grid.Row="0" Grid.Column="1"/>
-        <Button Click="Button_Click"  Grid.Row="2" Content="Вычислить" FontSize="30"/>
+        <Button Click="Button_Click" Grid.Row="2" Content="Вычислить" FontSize="30"/>
         <Label x:Name="lab" Grid.Row="1" Grid.Column="1"/>
         <Image Margin="0,80" Source="Image5.png" Stretch="Fill"/>
     </Grid>

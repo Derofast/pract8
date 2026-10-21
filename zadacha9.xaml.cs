@@ -28,8 +28,6 @@ namespace pract8
         {
             int n = Convert.ToInt32(chN.Text);
 
-            if (n >= 1 && n <= 100)
-            {
 
                 int x = 2;
                 double d = 0;
@@ -63,8 +61,6 @@ namespace pract8
                 while (iw <= n);
 
                 lab.Content += $"DO WHILE: Сумма = {d}";
-
-            }
         }
     }
 }

@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="zadacha6" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="30" Text="Введите число n"/>
+        <TextBox x:Name="chN" Grid.Row="0" Grid.Column="1"/>
+        <Button Click="Button_Click" Grid.Row="2" Content="Вычислить" FontSize="30"/>
+        <Label x:Name="lab" Grid.Row="1" Grid.Column="1"/>
+        <Image Margin="10,106,5,73" Source="Image9.png" Stretch="Fill"/>
+
     </Grid>
 </Window>

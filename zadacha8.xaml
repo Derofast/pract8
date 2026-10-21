@@ -15,7 +15,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBlock FontSize="30"><Run Text="Введите"/><Run Text=" число n"/></TextBlock>
+        <TextBlock FontSize="30" Text="Введите число n"/>
         <TextBox x:Name="chN" Grid.Row="0" Grid.Column="1"/>
         <Button Click="Button_Click" Grid.Row="2" Content="Вычислить" FontSize="30"/>
         <Label x:Name="lab" Grid.Row="1" Grid.Column="1"/>

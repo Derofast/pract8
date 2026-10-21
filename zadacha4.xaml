@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="zadacha4" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="30" Text="Введите цену за 1кг сыра" />
+        <TextBox x:Name="chN" Grid.Row="0" Grid.Column="1"/>
+        <Button Click="Button_Click" Grid.Row="2" Content="Вычислить" FontSize="30"/>
+        <ListBox x:Name="lb1" Grid.Column="1" Margin="0,0,270,0" Grid.Row="1"/>
+        <ListBox x:Name="lb2" Grid.Column="1" Margin="126,0,144,-1" Grid.Row="1"/>
+        <ListBox x:Name="lb3" Grid.Column="1" Margin="252,0,18,-1" Grid.Row="1"/>
+        <Image Margin="0,85,0,88" Source="Image12.png" Stretch="Fill"/>
     </Grid>
 </Window>

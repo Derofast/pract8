@@ -23,5 +23,25 @@ namespace pract8
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int n = Convert.ToInt32(chN.Text);
+
+            if (n >= 1 && n <= 100)
+            {
+
+                int x = 2;
+                double d = 0;
+
+                for (int i= 1; i <= n; i++)
+                {
+                    d += Math.Pow(x, i) / i;
+
+                }
+                lab.Content = $"FOR: Сумма = {d}";
+
+            }
+        }
     }
 }

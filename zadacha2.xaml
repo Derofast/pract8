@@ -19,6 +19,6 @@
         <TextBox x:Name="chN" Grid.Row="0" Grid.Column="1"/>
         <Button Click="Button_Click"  Grid.Row="2" Content="Вычислить" FontSize="30"/>
         <Label x:Name="lab" Grid.Row="1" Grid.Column="1"/>
-        <Image Margin="10,84,4,104" Source="Image2.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Margin="9,99,5,89" Source="Image2.png" Stretch="Fill"/>
     </Grid>
 </Window>

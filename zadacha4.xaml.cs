@@ -28,39 +28,32 @@ namespace pract8
         {
             int k = Convert.ToInt32(chK.Text);
 
-            if (cb.SelectedIndex == 0)
-            {
-                lab.Content = "FOR:\n";
-                for (double w = 50.0; w <= 1000; w += 50)
+                lab.Items.Add("FOR:");
+                for (double v = 50.0; v <= 1000; v += 50)
                 {
-                    double cost = (w / 1000.0) * k;
-                    lab.Content += $"Вес {w} | Цена {cost}\n";
+                    double cost = (v / 1000.0) * k;
+                    lab.Items.Add($"Вес {v} | Цена {cost}");
                 }
-            }
-            if (cb.SelectedIndex == 1)
-            {
-                lab.Content = "WHILE:\n";
+      
+                lab.Items.Add("WHILE:");
                 double w = 50.0;
                 while (w <= 1000.0)
                 {
                     double cost = (w / 1000.0) * k;
-                    lab.Content += $"Вес {w} | Цена {cost}\n";
+                    lab.Items.Add($"Вес {w} | Цена {cost}");
                     w += 50;
                 }
-            }
-            if (cb.SelectedIndex == 2)
-            {
-                lab.Content = "DO WHILE:\n";
-                double w = 50.0;
+
+                lab.Items.Add("DO WHILE:");
+                w = 50.0;
                 do
                 {
                     double cost = (w / 1000.0) * k;
-                    lab.Content += $"Вес {w} | Цена {cost}\n";
+                    lab.Items.Add($"Вес {w} | Цена {cost}");
                     w += 50;
                 }
                 while (w <= 1000);
 
-            }
         }
     }
 }

@@ -35,7 +35,7 @@ namespace pract8
             {
                 sum += i;
             }
-            lab.Content += $"FOR: {sum}\n";
+            lab.Content = $"FOR: {sum}\n";
 
             sum = 0;
             int iw = st;

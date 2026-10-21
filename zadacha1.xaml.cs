@@ -28,55 +28,49 @@ namespace pract8
         {
             int k = Convert.ToInt32(chK.Text);
 
-            if (cb.SelectedIndex == 0)
-            {
-                lab.Content = "FOR:\n";
-                lab.Content += " m \t n \t a \t b \t c \n";
+                lab.Items.Add("FOR:");
+                lab.Items.Add(" m \t n \t a \t b \t c ");
                 for (int n= 2; n < k; n++)
                 {
                     int m = n + 1;
                     double a = Math.Pow(m, 2) - Math.Pow(n, 2);
                     int b = 2 * m * n;
                     double c = Math.Pow(m, 2) + Math.Pow(n, 2);
-                    lab.Content += $" {m} \t {n} \t {a} \t {b} \t {c} \n";
+                    lab.Items.Add($" {m} \t {n} \t {a} \t {b} \t {c} ");
                 }
-            }
-            if (cb.SelectedIndex == 1)
-            {
-                lab.Content = "WHILE:\n";
-                lab.Content += " m \t n \t a \t b \t c \n";
 
-                int n = 2;
+                lab.Items.Add("WHILE:");
+                lab.Items.Add(" m \t n \t a \t b \t c ");
 
-                while (n < k)
+                int nw = 2;
+
+                while (nw < k)
                 {
-                    int m = n + 1;
-                    double a = Math.Pow(m, 2) - Math.Pow(n, 2);
-                    int b = 2 * m * n;
-                    double c = Math.Pow(m, 2) + Math.Pow(n, 2);
-                    lab.Content += $" {m} \t {n} \t {a} \t {b} \t {c} \n";
-                    n++;
+                    int m = nw + 1;
+                    double a = Math.Pow(m, 2) - Math.Pow(nw, 2);
+                    int b = 2 * m * nw;
+                    double c = Math.Pow(m, 2) + Math.Pow(nw, 2);
+                    lab.Items.Add($" {m} \t {nw} \t {a} \t {b} \t {c} ");
+                    nw++;
                 }
-            }
-            if (cb.SelectedIndex == 2)
-            {
-                lab.Content = "DO WHILE:\n";
-                lab.Content += " m \t n \t a \t b \t c \n";
 
-                int n = 2;
+                lab.Items.Add("DO WHILE:");
+                lab.Items.Add(" m \t n \t a \t b \t c ");
+
+                nw = 2;
 
                 do
                 {
-                    int m = n + 1;
-                    double a = Math.Pow(m, 2) - Math.Pow(n, 2);
-                    int b = 2 * m * n;
-                    double c = Math.Pow(m, 2) + Math.Pow(n, 2);
-                    lab.Content += $" {m} \t {n} \t {a} \t {b} \t {c} \n";
-                    n++;
+                    int m = nw + 1;
+                    double a = Math.Pow(m, 2) - Math.Pow(nw, 2);
+                    int b = 2 * m * nw;
+                    double c = Math.Pow(m, 2) + Math.Pow(nw, 2);
+                    lab.Items.Add($" {m} \t {nw} \t {a} \t {b} \t {c} \n");
+                    nw++;
                 }
-                while (n < k);
+                while (nw < k);
 
-            }
+            
         }
 
     }

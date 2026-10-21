@@ -17,12 +17,8 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Введите цену за 1кг сыра" FontSize="30"/>
         <TextBox x:Name="chK" Grid.Column="1" />
-        <ComboBox Name="cb" Margin="137,47,152,63">
-            <ComboBoxItem Content="Цикл For" IsSelected="True"/>
-            <ComboBoxItem Content="Цикл While"/>
-            <ComboBoxItem Content="Цикл Do While"/>
-        </ComboBox>
         <Button Click="Button_Click" Grid.Row="2" Content="Вычислить" FontSize="30"/>
-        <Label x:Name="lab" Grid.Column="1" Grid.Row="1"/>
+        <ListBox x:Name="lab" Grid.Row="1" Grid.Column="1"/>
+        <Image Margin="0,127,10,5" Source="Image16.png" Stretch="Fill"/>
     </Grid>
 </Window>
